@@ -1,12 +1,12 @@
-<a href="#" class="content__card">
+<a href={{moviesData.link}} class="content__card">
   <div class="content__card-img">
-    <img src="./images/card.png" alt="Фильм">
+    <img src={{moviesData.img}} alt={{moviesData.title}}>
   </div>
   <div class="content__card-info">
     <h4 class="content__card-title">
-      <span>{{title}},</span> The Martian 2015
+      <span>{{moviesData.title}},</span> {{moviesData.original}}
     </h4>
-    <p class="content__card-subtitle">Фантастика, приключения</p>
+    <p class="content__card-subtitle">{{moviesData.category}}</p>
   </div>
-  <span class="content__card-rating">7.8</span>
+  <span class="content__card-rating">{{moviesData.rating}}</span>
 </a>

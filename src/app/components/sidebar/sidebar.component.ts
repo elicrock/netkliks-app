@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { SidebarCard } from '../../models/sidebar-card.model';
+import { SIDEBARCARDS } from '../../constants/sidebar-card.constants';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './sidebar.component.css'
 })
 export class SidebarComponent {
-
+  sidebarCards: SidebarCard[] = SIDEBARCARDS;
 }

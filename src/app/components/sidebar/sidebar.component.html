@@ -2,30 +2,8 @@
   <div class="content__sidebar-info">
     <h3 class="content__sidebar-title">Подборки фильмов и сериалов</h3>
     <div class="content__sidebar-items">
-      <div class="content__sidebar-item">
-        <h5 class="content__sidebar-item-subtitle">Топ-250</h5>
-        <p class="content__sidebar-item-text">
-          Подборка фильмов и сериалов
-          с наивысшими оценками
-          зрителей
-        </p>
-      </div>
-      <div class="content__sidebar-item">
-        <h5 class="content__sidebar-item-subtitle">Посмеяться от души</h5>
-        <p class="content__sidebar-item-text">
-          Подборка комедий, которые
-          помогут расслабиться после
-          работы
-        </p>
-      </div>
-      <div class="content__sidebar-item">
-        <h5 class="content__sidebar-item-subtitle">Запутанный сюжет</h5>
-        <p class="content__sidebar-item-text">
-          Триллеры и прключения
-          с запутанным и интересным
-          сюжетом. Невозможно оторваться!
-        </p>
-      </div>
+      <app-sidebar-card *ngFor="let card of sidebarCards" [cardData]="card">
+      </app-sidebar-card>
     </div>
   </div>
   <div class="content__sidebar-footer">

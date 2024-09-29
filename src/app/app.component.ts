@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Movie } from './models/movies.model';
+import { MOVIES } from './constants/movies.constants';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-
+  movies: Movie[] = MOVIES;
 }
