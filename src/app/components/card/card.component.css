@@ -1,3 +1,7 @@
+:host {
+  display: grid;
+}
+
 .content__card {
   max-width: 264px;
   display: flex;
@@ -51,7 +55,16 @@
   color: #000;
 }
 
-.content__card-subtitle {
+.movie-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.movie-categories span {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -73,10 +86,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .content__card {
-    margin: 0 auto;
-  }
-
   .content__card-img {
     height: 376px;
   }

@@ -2,14 +2,6 @@
 
 <main class="main">
   <app-search></app-search>
-  <section class="content">
-    <div class="content__main">
-      <h2 class="content__title">Результаты поиска</h2>
-      <div class="content__cards">
-        <app-card *ngFor="let movie of movies" [moviesData]="movie">
-        </app-card>
-      </div>
-    </div>
-    <app-sidebar></app-sidebar>
-  </section>
+
+  <router-outlet></router-outlet>
 </main>

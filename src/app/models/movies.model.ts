@@ -2,8 +2,9 @@ export interface Movie {
   id: number,
   title: string,
   original: string,
-  category: string,
+  category: string[],
   rating: number,
   link: string,
-  img: string
+  img: string,
+  description?: string,
 }

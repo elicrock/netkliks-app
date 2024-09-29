@@ -1,0 +1,11 @@
+<section class="content">
+  <div class="content__main">
+    <h2 class="content__title">Результаты поиска</h2>
+    <div class="content__cards">
+      @for (movie of movies; track movie.id) {
+      <app-card [movie]="movie"></app-card>
+      }
+    </div>
+  </div>
+  <app-sidebar></app-sidebar>
+</section>

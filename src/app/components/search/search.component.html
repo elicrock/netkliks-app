@@ -1,4 +1,4 @@
-<section class="search">
-  <input id="search__input" class="search__input" placeholder="Что хотите посмотреть?">
-  <button id="search__btn" class="search__btn">Найти</button>
-</section>
+<form class="search" (submit)="updateSearch($event)">
+  <input [value]="searchQuery" class="search__input" placeholder="Что хотите посмотреть?" (input)="updateValue($event)">
+  <button class="search__btn" (click)="updateSearch($event)">Найти</button>
+</form>

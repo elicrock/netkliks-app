@@ -8,6 +8,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { SearchComponent } from './components/search/search.component';
 import { SidebarCardComponent } from './components/sidebar-card/sidebar-card.component';
+import { CatalogPageComponent } from './pages/catalog-page/catalog-page.component';
+import { MoviePageComponent } from './pages/movie-page/movie-page.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { SidebarCardComponent } from './components/sidebar-card/sidebar-card.com
     HeaderComponent,
     SidebarComponent,
     SearchComponent,
-    SidebarCardComponent
+    SidebarCardComponent,
+    CatalogPageComponent,
+    MoviePageComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -1,12 +1,14 @@
-<a href={{moviesData.link}} class="content__card">
+<a [routerLink]="['/movie', movie.id]" class="content__card">
   <div class="content__card-img">
-    <img src={{moviesData.img}} alt={{moviesData.title}}>
+    <img [src]="movie.img" [alt]="movie.title">
   </div>
   <div class="content__card-info">
     <h4 class="content__card-title">
-      <span>{{moviesData.title}},</span> {{moviesData.original}}
+      <span>{{movie.title}},</span> {{movie.original}}
     </h4>
-    <p class="content__card-subtitle">{{moviesData.category}}</p>
+    <div class="movie-categories">
+      <span *ngFor="let category of movie.category">{{ category }}</span>
+    </div>
   </div>
-  <span class="content__card-rating">{{moviesData.rating}}</span>
+  <span class="content__card-rating">{{movie.rating}}</span>
 </a>
